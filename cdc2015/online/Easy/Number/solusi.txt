@@ -1,0 +1,48 @@
+1. Buka file Number.pcapng dengan wireshark
+2. Filter wireshark dengan protokol http dan perhatikan source IP yang berasal dari 172.16.2.18
+3. Didapatkan baris aneh sebagai berikut: Vprkfpmx. Klik kanan follow TCP Stream, didapatkan hostnya adalah pastebin.com. Jika dirangkai menjadi 
+http://pastebin.com/Vprkfpmx.
+
+4. Buka alamat di atas dengan browser, didapatkan text sebagai berikut:
+
+TNI AU lahir dengan dibentuknya Badan Keamanan Rakyat (BKR) pada Tanggal 23 Agustus 1945, 
+guna memperkuat Armada Udara yang saat itu berkekurangan pesawat terbang dan fasilitas-fasilitas lainnya. 
+pada tanggal 5 Oktober 1945 berubah menjadi Tentara Keamanan Rakyat (TKR) jawatan penerbangan di bawah Komodor Udara Soerjadi Soerjadarma.
+
+Pada tanggal 23 Januari 1946 TKR ditingkatkan lagi menjadi TRI, sebagai kelanjutan dari perkembangan tunas Angkatan Udara. 
+Pada tanggal 9 April 1946, TRI jawatan penerbangan dihapuskan dan diganti menjadi Angkatan Udara Republik Indonesia, 
+yang kini diperingati sebagai hari lahirnya TNI AU yang diresmikan bersamaan dengan berdirinya Tentara Nasional Indonesia (TNI).
+
+Pada 29 Juli 1947 tiga kadet penerbang TNI AU masing-masing Kadet Mulyono, Kadet Suharnoko Harbani dan Kadet Sutarjo Sigit dengan 
+menggunakan dua pesawat Cureng dan satu Guntei berhasil melakukan pemboman terhadap kubu-kubu pertahanan Belanda di tiga tempat, 
+masing-masing di kota Semarang, Salatiga, dan Ambarawa.
+
+Modal awal TNI AU adalah pesawat-pesawat hasil rampasan dari tentara Jepang seperti jenis Cureng, Nishikoren, serta Hayabusha. 
+Pesawat-pesawat inilah yang merupakan cikal bakal berdirinya TNI AU. 
+Setelah keputusan Konferensi Meja Bundar tahun 1949, TNI AU menerima beberapa aset Angkatan Udara Belanda meliputi 
+pesawat terbang, hanggar, depo pemeliharaan, serta depot logistik lainnya. 
+Beberapa jenis pesawat Belanda yang diambil alih antara lain C-47 Dakota, B-25 Mitchell, P-51 Mustang, AT-6 Harvard, PBY-5 Catalina, dan Lockheed L-12.
+
+Tahun 1950, TNI AU mengirimkan 60 orang calon penerbang ke California Amerika Serikat, 
+mengikuti pendidikan terbang pada Trans Ocean Airlines Oakland Airport (TALOA). 
+Saat itu TNI AU mendapat pesawat tempur dari Uni Soviet dan Eropa Timur, berupa MiG-17, MiG-19, MiG-21, pembom ringan Tupolev Tu-2, dan pemburu Lavochkin La-11. 
+Pesawat-pesawat ini mengambil peran dalam Operasi Trikora dan Dwikora.
+
+TNI AU mengalami popularitas nasional tinggi dibawah dipimpin oleh 
+KASAU Kedua Marsekal Madya TNI Omar Dhani awal 1960-an. 
+TNI AU memperbarui armadanya pada awal tahun 1980-an dengan kedatangan pesawat 
+OV-10 Bronco, A-4 Sky Hawk, F-5 Tiger, F-16 Fighting Falcon, dan Hawk 100/200.
+
+5. Clue yang didapat adalah 1: Paragraf 2 : Baris 3 : Kalimat.
+6. Berbekal clue tersebut maka file Number.pcapng dibuka kembali dan dicek baris-barisnya.
+7. Baris aneh terlihat pada wp-login.php. Jika dilihat secara detil pada wp-login.php ada  kode "pwd" sebagai berikut:
+
+1-3-5 = Artinya adalah Paragraf pertama, baris ketiga dan kata kelima
+2-3-7 = Artinya adalah Paragraf kedua, baris ketiga dan kata ketujuh
+4-2-10 = Artinya adalah Paragraf keempat, baris kedua dan kata kesepuluh
+5-3-16 = Artinya adalah Paragraf kelima, baris ketiga dan kata keenam belas
+6-4-5 = Artinya adalah Paragraf keenam, baris keempat dan kata kelima
+
+7. Dengan menterjemahkan kode-kode itu maka didapatkan Flag sbb:
+
+CDC2015{1945TNIAUHawkMig-19F-5}

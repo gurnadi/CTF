@@ -1,0 +1,52 @@
+1. Ekstrak berkas KeyMap.tar.gz
+
+tar xvf KeyMap.tar.gz 
+
+2. Rename folder -KeyMap menjadi KeyMap dan rename -keymap.jpg menjadi keymap.jpg melalui Nautilus (Explorer milik linux)
+
+3. Berkas tanah_air_indonesia.rar ternyata dipassword dan kemungkinan besar password ada di keymap.jpg
+
+cd KeyMap/
+exiftool keymap.jpg 
+
+4. Dari exiftool dicurigai ada koordinat geografis yang mungkin menuju ke sebuah password
+
+exiftool keymap.jpg | grep "GPS Position"
+GPS Position : 6 deg 9' 5.92" S, 106 deg 49' 3.25" E
+
+5. Googling "convert latitude longitude to google maps" didapatkan link: http://www.gps-coordinates.net/gps-coordinates-converter 
+
+Entry koordinat di atas menjadi:
+
+6 derajat 9 menit 5.92 detik lintang selatan 
+106 derajat 49 menit 3.25 detik bujur timur 
+
+Didapatkan koordinat google maps-nya adalah: -6.1516444,106.81756944444444
+
+6. Entry koordinat google maps itu ke dalam kolom address bar browser google chrome, akan muncul sebuah peta hasil pencarian google
+7. Klik peta yang tampil, muncul gambar "STADIUM HOTEL"
+8. Ekstrak tanah_air_indonesia.rar dengan password "stadiumhotel"
+
+unrar e tanah_air_indonesia.rar
+
+9. Hasil ekstrak menghasil sebuah file bermama tanah_air_indonesia.xlsx, selanjutnya adalah mengekstrak tanah_air_indonesia.xlsx dengan unzip
+
+unzip tanah_air_indonesia.xlsx
+
+10. Dari hasil analisa ada sebuah link pada berkas xl/drawings/drawing1.xml
+
+cat xl/drawings/drawing1.xml
+
+11. Didapatkan sebuah link yaitu: https://drive.google.com/file/d/0B4UINKsn0vTAM0dIYm0tM3lFcGs/view?usp=sharing
+12. Buka link tersebut di browser. Ada file keymapz.mp4. Download file tersebut.
+13. Setelah berhasil didownload, coba buka keymapz.mp4 dengan audacity
+
+audacity keymapz.mp4
+
+Klik Tanda Panah ke atas yang berada di atas tulisan "Project Rate (Hz)". 
+Klik menu keymapz yang ada di sebelah kiri, pilih spektrogram
+Lihat di paling pojok kanan ada blocking warna putih, kemungkinan besar itu adalah flag
+
+14. Atur besar kecilnya spektrogram dengan scroll mouse ke atas dan ke bawah dengan menekan tombol CTRL. Maka didapatkan flag:
+
+CDC2015{WELCOME TO AAU YOGYAKARTA}

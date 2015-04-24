@@ -1,0 +1,31 @@
+1. Buka file Syn.pcapng dengan wireshark
+2. Lakukan filtering http di wireshark
+3. Cek pada /berjuang ataupun Authorization Requires, dan lakukan Follow TCP Stream didapatkan enkripsi base64 sbb:
+
+Authorization: Basic YWRtaW46YWRtaW4=
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+Authorization: Basic cmhvbWE6ZGFyYWhtdWRh
+
+4. Di Follow TCP Stream juga didapatkan informasi sebagai berikut:
+
+IP Address Destination: 203.34.119.35
+Path: /berjuang
+
+Jika dirangkai maka akan menjadi http://203.34.119.35/berjuang
+
+5. Lakukan dekrip semua enkripsi base64 yang didapat dari langkah nomor 3. 
+
+echo 'YWRtaW46YWRtaW4=' | base64 -d
+admin:admin
+
+echo 'YWRtaW46cGFzc3dvcmQ=' | base64 -d
+admin:password
+
+echo 'cmhvbWE6ZGFyYWhtdWRh' | base64 -d
+rhoma:darahmuda
+
+6. Coba semua kombinasi username dan password tersebut untuk login ke http://203.34.119.35/berjuang
+
+7. Ternyata bisa login ke http://203.34.119.35/berjuang menggunakan username: rhoma, password: darahmuda, sehingga didapatkan flag:
+
+CDC2015{merdeka2015}

@@ -1,0 +1,21 @@
+1. Bongkar file DisiniAja.exe menggunakan VB Decompiler
+2. Download VB Decompiler dari sini: http://www.decompiler-vb.net/vbreformer-free.aspx
+2. Liat Graphical User Interface - Form1. Dan perhatikan Texttooltip Form1 hasil decompile
+3. Rangkai secara berurutan textooltip tersebut, maka akan didapatkan rangkaian huruf sbb:
+
+|kxwy|s
+
+4. Tutup VB Decompiler.
+
+5. Klik file DisiniAja. exe dan paste text di atas ke kolom Dekrip dan coba ubah-ubah key-nya dari angka 1 hingga 17 Lalu klik tombol "Dekrip". Maka akan didapatkan kata "ranmouri" pada saat key diset di angka 10. (10 itu artinya proses dekripsi password dilakukan sebanyak 10 kali putaran)
+
+5. Buka file cdc2015.jpg dengan menggunakan perintah steghide dan gunakan password yang sudah didapatkan dari langkah nomor 5.
+
+steghide extract -sf cdc2015.jpg -p ranmouri
+
+didapatkan 11.txt.
+
+6. Buka 11.txt dan lihat baris terbawah. Didapatkan Flag sbb:
+
+CDC2015{7065726769706167697061676970756c616e67706574616e67706574616e6770656e67686173696c616e706173706173616e}
+

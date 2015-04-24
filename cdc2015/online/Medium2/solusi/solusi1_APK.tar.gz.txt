@@ -1,0 +1,67 @@
+1. Ekstrak APK.tar.gz dengan perintah tar
+
+tar xvf APK.tar.gz 
+cd Apk/
+
+2. Didapatkan folder Apk dan didalamnya ada berkas kopijahat.apk
+
+3. unzip kopijahat.apk
+
+unzip kopijahat.apk
+
+4. Decompile classes.dex dengan perintah
+ 
+java -jar /usr/share/smali/baksmali-1.4.1.jar classes.dex -o out
+
+5. Analisa semua berkas tersebut. Dicurigai flag ada pada file flag.html yang berlokasi di cd res/raw
+
+cd res/raw/
+cat flag.html
+
+6. Paste "XXXXXX decode encode" ke google (XXXXX adalah beberapa karakter terdepan dari encoding yang ada di flag.html), ditemukan alamat untuk decode yaitu: 
+
+http://cat-in-136.github.io/2010/12/aadecode-decode-encoded-as-aaencode.html
+
+7. Paste ulang semua isi flag.html dan klik tombol decode. Didapatkan link: http://tinypic.com/view.php?pic=11j0pch&s=8#.VSUwB_CQn-k
+
+8. Buka link tersebut, ada sebuah gambar dan diketahui gambar tersebut adalah "Gerbang Logika" atau dalam bahasa inggris "logic circuit". Gerbang Logika/Logic Circuit adalah pengetahuan dasar dalam hal elektronika.
+
+9. Dalam gambar terdefinisi jelas bahwa format flag adalah CDC2015{MD5}, kemudian 1 bernilai On dan 0 bernilai Off (Switching). Yang perlu dilakukan adalah mencoba semua kemungkinan kombinasi logika INPUT untuk mendapatkan semua Flag yang ada di sebelah kanan.
+
+10. Untuk mempercepat proses kombinasi maka bisa menggunakan berbagai tools online dengan kata kunci "logic circuit demo", Didapatkan alamat:
+
+http://logic.ly/demo/
+
+11. Buatlah logika sirkuit baru di web tersebut disesuaikan dengan gambar jpg yang berhasil diperoleh.
+
+12. Dengan bantuan sirkuit didapatkan input dan hasil sebagai berikut:
+
+INPUT	HASIL
+0000	1001000
+0001	1001000
+0011	1000111
+0111	1000111
+1111	0100111
+1110	0101000
+1100	1001000
+1000	1001000
+1010	1101000
+0101	1101000
+
+md5 semua satu persatu HASIL di atas dengan menggunakan perintah
+
+echo -n 'HASIL' | md5sum
+
+13. Coba semua hasil perintah di atas untuk disubmit ke web scoring.
+
+echo -n '1001000' | md5sum --> CDC2015{ed7bd5bccea3317f7fc60813a25363a2}
+echo -n '1000111' | md5sum --> CDC2015{f301886e1b5aa33d38b51f12a970243b}
+echo -n '0100111' | md5sum --> CDC2015{16b13a16711ed015fd56f7906556bf33}
+echo -n '0101000' | md5sum --> CDC2015{645e40d498aab4175056fe2df3495649}
+echo -n '1101000' | md5sum --> CDC2015{05641365f78755993a9c21cea5bd0e3a}
+
+14. Yang diterima web scoring adalah:
+
+echo -n '0100111' | md5sum --> CDC2015{16b13a16711ed015fd56f7906556bf33}
+
+Artinya INPUT: 1111 dan HASIL: 0100111

@@ -1,0 +1,26 @@
+1. Ekstrak berkas QR.tar.gz dengan perintah tar xvf QR.tar.gz
+2. Didapatkan sebuah QR Code
+3. Lihat metadata QR Code tersebut dengan http://zxing.org/w/decode.jspx
+4. Ada sebuah link untuk mendownload yaitu: http://files.appsgeyser.com/cdc2015cdc2015.apk
+5. Download file tersebut
+6. Setelah file tersebut berhasil didownload ada dua cara untuk mendapatkan flag. Gunakan Cara A atau cara B di bawah ini:
+
+Cara A
+------
+7. Install APK tersebut di android
+8. Setelah aplikasi terbuka di android ada kode braille yang tercantum di sana
+9. Terjemahkan kode braille itu dengan bantuan google
+10. Didapatkan terjemahan braille adalah cdc2015oye
+11. Flag adalah CDC2015{cdc2015oye}
+
+Cara B
+------
+7. Jika tidak bisa menginstall APK tersebut di android, maka decompile APK dengan perintah
+
+java -jar /usr/share/smali/baksmali.jar _cdc2015cdc2015.apk
+unzip _cdc2015cdc2015.apk
+
+8. Buka direktori assets/zip_1903822/img
+9. Terjemahkan kode braille yang ada pada gambar image_1.png dengan bantuan google
+10. Didapatkan terjemahan braille adalah cdc2015oye
+11. Flag adalah CDC2015{cdc2015oye}

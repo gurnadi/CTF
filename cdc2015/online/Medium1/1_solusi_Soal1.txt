@@ -1,0 +1,12 @@
+1. Ada akses ke ftp dengan alamat ftp://203.34.119.35
+2. Buka alamat tersebut dengan menggunakan browser. Gunakan akun anonymous sbb:
+
+user: anonymous 
+password: anonymous
+
+catatan: anonymous adalah user umum dan berlaku secara default dalam beberapa FTP Server. 
+
+3. Setelah berhasil login ke FTP Server, maka akan ada sebuah file dengan nama key-fl-46-cdc.txt
+4. Downloadlah file tersebut dan buka file tersebut dengan text editor dan ternyata mencantumkan flag:
+
+CDC2015{LEbiHDariDUARatuSJutaJiWAPenDuDuK-INDOneSIA}

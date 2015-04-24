@@ -1,0 +1,38 @@
+1. Bongkar berkas "Selamat Malam.pptx" dengan unzip
+2. Gunakan perintah:
+
+mv "Selamat Malam.pptx" selamat.zip
+
+3. Unzip berkas selamat.zip dengan perintah:
+
+unzip selamat.zip
+
+4. Masuklah ke direktori hasil ekstrak dari unzip:
+
+cd ppt/media
+
+5. Perhatikan semua gambar yang ada pada direktori tersebut
+6. Ada gambar "tempemendoan" pada image1.jpeg
+7. Tulisan yang tidak dicoret pada image2.png adalah cdc2015
+8. Gambar image3.png menunjukkan sebuah kode enkripsi. Ini adalah kode enkripsi ADFGVX
+
+Clue1: tempemendoan
+Clue2: cdc2015
+Clue3: DVDDF FAVXV VXGDG FADDD VAXFX AGDAD VDVXA FGVDV GVGDV GFXDF DAFFA FDGVX DGFVF GAAVF GAGDA DDDAX GD
+
+9. Googling "ADFGVX encoder decoder" dan didapatkan alamat: http://www.grasoft.be/geotools/ADFGVX.htm
+
+10. Masukkan Clue-clue pada langkah nomor 8 sebagai berikut:
+
+- Alphabet Key: tempemendoan
+- Klik calculate matrix
+- Transposition word: cdc2015
+- Klik calculate order
+- Encrypted input: DVDDF FAVXV VXGDG FADDD VAXFX AGDAD VDVXA FGVDV GVGDV GFXDF DAFFA FDGVX DGFVF GAAVF GAGDA DDDAX GD
+- Klik Decrypt dan hasilnya adalah:
+
+flagnyaadalahcdc2015accelarateyourpassion
+
+11. Maka Final Flag-nya adalah:
+
+CDC2015{cdc2015accelarateyourpassion}

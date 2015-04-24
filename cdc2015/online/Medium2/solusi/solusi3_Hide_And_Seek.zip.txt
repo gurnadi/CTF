@@ -1,0 +1,82 @@
+1. Unzip berkas Hide_And_Seek.zip dengan menggunakan password yang didapatkan dari panitia
+
+unzip Hide_And_Seek.zip
+
+2. Terdapat dua file yaitu md5sum.txt dan torque.lrz
+
+3. Ekstrak berkas torque.lrz dengan perintah
+
+lrunzip torque.lrz
+
+4. Cek jenis tipe file dengan perintah file :
+
+file torque
+
+5. Ternyata file torque adalah sebuah file terkompresi xz. Untuk itu perlu diekstrak dengan perintah xz, tapi sebelumnya harus direname agar berakhiran xz
+
+mv torque torque.xz
+xz –dv torque.xz
+
+6. Hasil ekstrak menghasilkan sebuah file bernama torque. Kembali di cek dengan perintah file
+
+file torque
+file torque: Linux rev 1.0 ext4 filesystem data, UUID=c182e00b-26d9-4018-8d2b-21cdf1431580 (extents) (huge files)
+
+7. Ternyata sebuah file sytem dengan tipe ext4. Maka perlu kita mount file tersebut.
+
+mkdir temp
+mount –o loop,rw torque temp/
+cd temp/
+ls
+
+8. Ternyata ada banyak sekali file di dalamnya. Kembali dicek dengan menggunakan perintah file
+
+file *
+
+9. Ternyata ada banyak sekali file hampir semuanya file terkompresi yang berisikan txt, mp4, mp3 dan lain-lain. Difiltering untuk file txt saja karena itu yang dicurigai sebagai flag dengan perintah
+
+file * | grep txt
+
+24: gzip compressed data, was "jawaban.txt", from Unix, last modified: Sat Mar  7 18:32:54 2015
+25: gzip compressed data, was "bendera.txt", from Unix, last modified: Sat Mar  7 18:33:21 2015
+26: gzip compressed data, was "answer.txt", from Unix, last modified: Sat Mar  7 18:33:09 2015
+27: gzip compressed data, was "submit.txt", from Unix, last modified: Sat Mar  7 18:33:40 2015
+46: gzip compressed data, was "kunci.txt", from Unix, last modified: Fri Mar  6 00:01:41 2015
+
+
+10. Terlihat bahwa file yang memiliki berkas txt adalah 24, 25, 26, 27 dan 46. Rename semua file tersebut agar berakhiran gz
+
+mv 24 24.gz
+mv 25 25.gz
+mv 26 26.gz
+mv 27 27.gz
+mv 46 46.gz
+
+11. Ekstrak semua file diatas dengan perintah gunzip
+
+gunzip 24.gz
+gunzip 25.gz
+gunzip 26.gz
+gunzip 27.gz
+gunzip 46.gz
+
+12. Cek semua file hasil ekstrak dari gunzip dengan perintah cat
+
+cat 24
+pastebin.com
+
+cat 25
+packetstorm
+
+cat 26
+exploit-db
+
+cat 27
+CDC2015
+
+cat 46
+CDC2015{53c76f0e5be831d6b7e1141ac36e6f654d3d9744}
+
+13. Didapatkan flag ada pada berkas 46
+
+Flag: CDC2015{53c76f0e5be831d6b7e1141ac36e6f654d3d9744}

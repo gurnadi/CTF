@@ -1,0 +1,65 @@
+Mengganti semua permission berbahaya (777 dan 666) menjadi (755 dan 644)
+------------------------------------------------------------------------
+cd /var/www/html
+find ./ -type d | xargs chmod 755
+find ./ -type f | xargs chmod 644
+
+
+Untuk menganalisa apakah ada BACKDOOR yang ditanam dalam aplikasi web bisa menggunakan perintah (hasil analisanya adalah melakukan modifikasi pada berkas yang diduga berpotensi memiliki celah keamanan):
+
+cd /var/www/html
+
+Mencari berkas yang berpotensi sbg backdoor (dalam format base64):
+------------------------------------------------------------------
+grep -i -r "base64_decode" *
+
+Mencari berkas yang memiliki potensi celah keamanan XSS:
+--------------------------------------------------------
+grep -i -r "echo" *
+grep -i -r "\$_GET" *
+grep -i -r "\$_" * | grep "echo"
+grep -i -r "\$_GET" * | grep "echo"
+grep -i -r "\$_POST" * | grep "echo"
+grep -i -r "\$_REQUEST" * | grep "echo"
+
+Mencari berkas yang memiliki potensi keamanan command execution:
+----------------------------------------------------------------
+grep -i -r "shell_exec(" *
+grep -i -r "system(" *
+grep -i -r "exec(" *
+grep -i -r "popen(" *
+grep -i -r "passthru(" *
+grep -i -r "proc_open(" *
+grep -i -r "pcntl_exec(" *
+
+Mencari berkas yang memiliki potensi keamanan code execution:
+-------------------------------------------------------------
+grep -i -r "eval(" *
+grep -i -r "assert(" *
+grep -i -r "preg_replace" * | grep "/e"
+grep -i -r "create_function(" *
+
+Mencari berkas yang memiliki potensi keamanan sql injection:
+--------------------------------------------------
+grep -i -r "\$sql" *
+grep -i -r "\$sql" * | grep "\$_"
+
+Mencari berkas yang memiliki potensi keamanan information disclosure:
+---------------------------------------------------------------------
+grep -i -r "phpinfo" *
+
+Mencari berkas yang memiliki potensi keamanan development functionality:
+------------------------------------------------------------------------
+grep -i -r "debug" *
+grep -i -r "\$_GET['debug']" *
+grep -i -r "\$_GET['test']" *
+
+Mencari berkas yang memiliki potensi keamanan file inclusion:
+-------------------------------------------------------------
+grep -i -r "file_include" *
+grep -i -r "include(" *
+grep -i -r "require(" *
+grep -i -r "require(\$file)" *
+grep -i -r "include_once(" *
+grep -i -r "require_once(" *
+grep -i -r "require_once(" * | grep "\$_"
