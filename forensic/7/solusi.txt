@@ -1,0 +1,10 @@
+1. Ekstrak BB.tar.gz menggunakan Sevenzip
+
+2. Cek berkas barcode.png dicurigai mengandung key dan upload berkas barcode.png ke http://zxing.org/w/decode Didapatkan enkripsi base64 a290YXJvX21pbmFtaQ==.
+
+3. Terjemahkan base64 tersebut dengan bantuan http://asciitohex.com didapatkan key "kotaro_minami"
+
+4. Install TrueCrypt di pc anda. Select berkas jah'rakal di true crypt dan klik Mount. Jika diminta password masukkan "kotaro_minami"
+
+5. Ditemukan flag "Chow Yun Fat"
+

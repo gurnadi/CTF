@@ -1,0 +1,41 @@
+1. Ekstrak level6.zip
+
+2. Ternyata ada 4 direktori yaitu (images, music, txt dan videos)
+
+3. Seperti tips yang disampaikan saat training, semakin banyak file, maka kita perlu fokus pada berkas yang paling mudah. Hal ini bisa dilakukan pada folder txt.
+
+4. Ada tiga berkas pada folder txt dan semuanya dalam format base64 
+
+5. Dekrip base64 tersebut dengan perintah
+
+cat 1.txt | base64 -d > 1
+cat 2.txt | base64 -d > 2
+cat 3.txt | base64 -d > 3
+
+6. Cek jenis file dengan perintah "file"
+
+file 1 2 3 
+1: JPEG image data, JFIF standard 1.01
+2: PNG image data, 341 x 413, 8-bit/color RGBA, non-interlaced
+3: JPEG image data, JFIF standard 1.01
+
+7. Rename semua file dengan ekstension yang sesuai
+
+mv 1 1.jpg
+mv 2 2.png
+mv 3 3.jpg
+
+8. Cek gambar 1.jpg ada tulisan ICROSS. Bisa kita coba menggunakan steghide
+
+steghide extract -sf 1.jpg -p icross
+
+9. Ternyata ada sebuah file bernama clue.txt
+
+10. Cek isi berkas clue.txt
+
+cat clue.txt
+
+11. Isinya adalah sebuah naskah proklamasi dengan judul "P R O K L A M A S I"
+
+12. Flag adalah: "P R O K L A M A S
+ I"

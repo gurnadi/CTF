@@ -1,0 +1,13 @@
+Indonesia Digital.
+
+Para warga Indonesia dengan semangat membara menyatakan bahwa sudah waktunya Indonesia merdeka dalam dunia digital.
+
+Penjajahan dari negara lain ke Indonesia Digital memaksa rakyat Indonesia digital menggelorakan kembali semangat proklamasi yang pernah dinyatakan pada tahun 1945.
+
+Namun penjajah berhasil menguasai Indonesia Digital dan berhasil mengambil beberapa dokumen digital yang memprovokasi kemerdekaan Indonesia Digital. Dalam dokumen ini juga terkandung pernyataan kemerdekaan Indonesia Digital.
+
+Disaat kekecewaan muncul di rakyat Indonesia Digital, beberapa hacker Indonesia Digital berhasil merebut kembali dokumen tersebut dan ingin membuka ke publik naskah itu. Jika hal ini terlaksana, maka dunia internasional akan mengakui kemerdekaan Indonesia Digital dan penjajah terpaksa mengakuinya. Sayangnya, pihak penjajah sudah menyadari hal ini sejak awal, sehingga mereka menyembunyikan naskah kemerdekaan itu.
+
+Tugas anda adalah menemukan naskah tersebut.
+
+Hint: Flag adalah judul naskah pernyataan kemerdekaan Indonesia Digital
