@@ -1,0 +1,40 @@
+1. Install PDF Stream Dumper
+
+2. Open berkas soal.pdf menggunakan pdf stream dumper
+
+3. Buka pada baris ketujuh, didapatkan kode hexa sbb:
+
+x68x74x74x70x3ax2fx2fx70x72x6ex74x73x63x72x2ex63x6fx6dx2fx34x77x62x77x73x78
+
+Disesuaikan dengan format hexa:
+
+68 74 74 70 3a 2f 2f 70 72 6e 74 73 63 72 2e 63 6f 6d 2f 34 77 62 77 73 78
+
+Terjemahkan dengan bantuan http://asciitohex.com didapatkan link: http://prntscr.com/4wbwsx
+
+4. Buka baris kedelapan pada pdf stream dumper, didapatkan enkripsi decimal sbb:
+
+ 104 116 116 112 	f
+115 58 47 47 119 	n 
+119 119 46 100 114 	n 
+111 112 98 111 120 	n
+46 99 111 109 47 	n
+115 47 48 98 116 	n
+122 110 51 115 120 	n
+101 99 101 102 51 	n
+117 98 47 70 108 97 n
+103 46 116 120 116	n
+
+
+5. Dekrip kode tersebut dengan bantuan http://asciitohex.com didapatkan link: https://www.dropbox.com/s/0btzn3sxecef3ub/Flag.txt
+
+6. Akses https://www.dropbox.com/s/0btzn3sxecef3ub/Flag.txt. Untuk login ternyata membutuhkan password.
+
+7. Akses http://prntscr.com/4wbwsx karena password login kemungkinan ada di sana.
+
+8. Ternyata menampilkan aksara jawa. Dengan bantuan google coba terjemahkan aksara jawa tersebut.
+
+9. Didapatkan aksara jawa tersebut adalah 6 3x yaitu: 666
+
+10. Akses kembali dropbox dan masukkan password 666. Didapatkan flag: T3mp3_m3nd04N
+

@@ -1,0 +1,29 @@
+1. Buka berkas level3.html, didapatkan ada kode bahasa pemrograman C.
+
+2. Copy dan simpan kode pemrograman itu dalam sebuah file bernama level3.c
+
+3. Ubah #include < stdio.h > menjadi #include <stdio.h> 
+
+4. Compile level3.c dengan perintah gcc
+
+gcc level3.c -o level3
+
+5. Buka berkas amber.css dan lihat pada baris bawah ada sebuah enkripsi base64. Dekrip enkripsi tersebut dengan perintah:
+
+echo 'PD9waHANCg0KZnVuY3Rpb24gY29udmVydCgkc3RyLCRreT0nJyl7DQppZigka3k9PScnKXJldHVybiAkc3RyOw0KJGt5PXN0cl9yZXBsYWNlKGNocigzMiksJycsJGt5KTsNCmlmKHN0cmxlbigka3kpPDgpZXhpdCgna2V5IGVycm9yJyk7DQoka2w9c3RybGVuKCRreSk8MzI/c3RybGVuKCRreSk6MzI7DQokaz1hcnJheSgpO2ZvcigkaT0wOyRpPCRrbDskaSsrKXsNCiRrWyRpXT1vcmQoJGt5eyRpfSkmMHgxRjt9DQokaj0wO2ZvcigkaT0wOyRpPHN0cmxlbigkc3RyKTskaSsrKXsNCiRlPW9yZCgkc3RyeyRpfSk7DQokc3RyeyRpfT0kZSYweEUwP2NocigkZV4ka1skal0pOmNocigkZSk7DQokaisrOyRqPSRqPT0ka2w/MDokajt9DQpyZXR1cm4gJHN0cjsNCn0NCg0KJGtleT0nQ2x1ZUxldmUzJzsgDQoNCiRzdHJpbmcxPSdAYGBgQGBgYCA5PSY2OzMgMyc7DQoNCiRzdHJpbmcyPWNvbnZlcnQoJHN0cmluZzEsJGtleSk7DQoNCiRzdHJpbmczPWNvbnZlcnQoJHN0cmluZzIsJGtleSk7DQoNCmVjaG8gJzxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpDb3VyaWVyIj4nLiJcbiI7DQplY2hvICcnLiRrZXkuJzxicj4nLiJcbiI7DQplY2hvICRzdHJpbmcxLic8YnI+Jy4iXG4iOw0KZWNobyAkc3RyaW5nMi4nPGJyPicuIlxuIjsNCg0KZWNobyAnPC9zcGFuPicuIlxuIjsNCj8+DQoNCg0KDQo=' | base64 -d
+
+6. Simpan hasil dekrip tersebut ke sebuah file bernama level3.php
+
+7. Jalankan level3.php dengan perintah
+
+php level3.php
+
+8. Didapatkan clue adalah: 1337666
+
+9. Jalankan perintah level3 hasil compile dari tahap 4.
+
+./level3
+Clue Level 3:1337666
+Clue Level 3 : 1337666 Flag : 1322635043
+
+10. Didapatkan flag adalah: 1322635043

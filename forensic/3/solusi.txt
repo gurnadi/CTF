@@ -1,0 +1,130 @@
+1. Baca soal baik-baik, dari soal terlihat ada beberapa huruf besar yang tidak pada tempatnya.
+
+2. Jika huruf besar itu dirangkai maka akan terlihat tulisan:
+
+PASTEBIN
+
+Selain itu ada rangkaian huruf 70AyUvcF 
+
+3. Akses http://pastebin.com/70AyUvcF, Didapatkan kode sbb:
+
+function convert($str,$ky=''){
+if($ky=='')return $str;
+$ky=str_replace(chr(32),'',$ky);
+if(strlen($ky)<8)exit('key error');
+$kl=strlen($ky)<32?strlen($ky):32;
+$k=array();for($i=0;$i<$kl;$i++){
+$k[$i]=ord($ky{$i})&0x1F;}
+$j=0;for($i=0;$i<strlen($str);$i++){
+$e=ord($str{$i});
+$str{$i}=$e&0xE0?chr($e^$k[$j]):chr($e);
+$j++;$j=$j==$kl?0:$j;}
+return $str;
+}
+ 
+$key='Nama Web';
+ 
+$string1='';
+
+4. Script di atas terlihat belum lengkap. "Select beberapa baris kode tersebut kemudian copy dan paste di google. akan didapatkan link berikut http://codepad.org/inXNO8HQ/fork dengan script lengkap sbb:
+
+<?php 
+// String EnCrypt + DeCrypt function 
+// Author: halojoy, July 2006 
+function convert($str,$ky=''){ 
+if($ky=='')return $str; 
+$ky=str_replace(chr(32),'',$ky); 
+if(strlen($ky)<8)exit('key error'); 
+$kl=strlen($ky)<32?strlen($ky):32; 
+$k=array();for($i=0;$i<$kl;$i++){ 
+$k[$i]=ord($ky{$i})&0x1F;} 
+$j=0;for($i=0;$i<strlen($str);$i++){ 
+$e=ord($str{$i}); 
+$str{$i}=$e&0xE0?chr($e^$k[$j]):chr($e); 
+$j++;$j=$j==$kl?0:$j;} 
+return $str; 
+} 
+/////////////////////////////////// 
+
+// Secret key to encrypt/decrypt with 
+$key='alacrity'; // 8-32 characters without spaces 
+
+// String to encrypt 
+$string1='Lu!d{{x9yefb!h{2m{ckd0wmmhg2cuzeodt!nde}{q9}bu\'pyhw'; 
+
+// EnCrypt string 
+$string2=convert($string1,$key); 
+
+// DeCrypt back 
+$string3=convert($string2,$key); 
+
+// Test output 
+echo '<span style="font-family:Courier">'."\n"; 
+echo 'Key: '.$key.'<br>'."\n"; 
+echo $string1.'<br>'."\n"; 
+echo $string2.'<br>'."\n"; 
+echo $string3.'<br>'."\n"; 
+echo '</span>'."\n"; 
+?>
+
+5. Simpan berkas tersebut dengan nama script.php. Ubah parameter $key menjadi "pastebin".
+
+6. Cari string yang akan di encrypt di http://pastebin.com/70AyUvcF dengan mengklik http://pastebin.com/u/wong_ndi_hayo
+
+7. Didapatkan Link http://pastebin.com/zKtFHgJD dan ada sebuah key:
+
+Vmrs%8)Z$ifKB1c| U
+
+8. Sesuaikan berkas script.php dan parameter $string1 menjadi "Vmrs%8)Z$ifKB1c| U". Script script.php lengkapnya akan sbg berikut:
+
+<?php 
+// String EnCrypt + DeCrypt function 
+// Author: halojoy, July 2006 
+function convert($str,$ky=''){ 
+if($ky=='')return $str; 
+$ky=str_replace(chr(32),'',$ky); 
+if(strlen($ky)<8)exit('key error'); 
+$kl=strlen($ky)<32?strlen($ky):32; 
+$k=array();for($i=0;$i<$kl;$i++){ 
+$k[$i]=ord($ky{$i})&0x1F;} 
+$j=0;for($i=0;$i<strlen($str);$i++){ 
+$e=ord($str{$i}); 
+$str{$i}=$e&0xE0?chr($e^$k[$j]):chr($e); 
+$j++;$j=$j==$kl?0:$j;} 
+return $str; 
+} 
+/////////////////////////////////// 
+
+// Secret key to encrypt/decrypt with 
+$key='pastebin'; // 8-32 characters without spaces 
+
+// String to encrypt 
+$string1='Vmrs%8)Z$ifKB1c| U'; 
+
+// EnCrypt string 
+$string2=convert($string1,$key); 
+
+// DeCrypt back 
+$string3=convert($string2,$key); 
+
+// Test output 
+echo '<span style="font-family:Courier">'."\n"; 
+echo 'Key: '.$key.'<br>'."\n"; 
+echo $string1.'<br>'."\n"; 
+echo $string2.'<br>'."\n"; 
+echo $string3.'<br>'."\n"; 
+echo '</span>'."\n"; 
+?>
+
+9. Jalankan berkas script.php
+
+php script.php 
+
+<span style="font-family:Courier">
+Key: pastebin<br>
+Vmrs%8)Z$ifKB1c| U<br>
+Flag : T4hu_G3jr0T<br>
+Vmrs%8)Z$ifKB1c| U<br>
+</span>
+
+Didapatkan Flag: T4hu_G3jr0T

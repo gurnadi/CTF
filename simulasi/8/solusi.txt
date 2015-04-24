@@ -1,0 +1,30 @@
+1. Buka berkas soal.pcapng dengan wireshark.
+
+2. Filtering wireshark dengan protokol ftp
+
+3. Ditemukan user "testing" dengan password "p3ng3nikutanCTF"
+
+4. Filtering wireshark dengan protokol http dan dari hasil analisa ditemukan baris mencurigakan ada di "/ctf/level7.txt" Berisi kode base64 sbb:
+
+U2VsYWluIHByb3Rva29sIEhUVFAsIEZpbHRlcmluZyBXaXJlc2hhcmsganVnYSBiaXNhIGRpbGFrdWthbiB1bnR1ayBwcm90b2tvbCBsYWlubnlhIHNlcGVydGkgbWlzYWxueWEgRlRQLg0KDQpGbGFnMjogUHJvdG9rb2xfRlRQX0hUVFA=
+
+5. Enkripsi base64 tersebut didekrip dan menghasilkan sbb:
+
+Selain protokol HTTP, Filtering Wireshark juga bisa dilakukan untuk protokol lainnya seperti misalnya FTP.
+
+Flag2: Protokol_FTP_HTTP
+
+6. Sesuai Soal:
+
+Flag1 = p3ng3nikutanCTF
+Flag2 = Protokol_FTP_HTTP
+
+Flag = md5(p3ng3nikutanCTFProtokol_FTP_HTTP)
+
+echo 'p3ng3nikutanCTFProtokol_FTP_HTTP' | md5sum
+4f459d6d2f9a5ff8299df731b0e30379
+
+echo -n 'p3ng3nikutanCTFProtokol_FTP_HTTP' | md5sum
+8e1f9cdccc6a628d955e6c09f73a3ba6
+
+7. Setelah dicoba pada web scoring ditemukan flag yang sesuai adalah 8e1f9cdccc6a628d955e6c09f73a3ba6 

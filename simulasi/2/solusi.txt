@@ -1,0 +1,22 @@
+1. Buka berkas level2.html dan di baris bawah ada enkripsi sbb:
+
+/1x52/1x6d/1x78/1x68/1x5a/1x7a/1x70/1x77/1x64/1x54/1x56/1x6b/1x4e/1x48/1x51/1x78/1x62/1x6c/1x39/1x4d/1x4d/1x33/1x59/1x7a/1x62/1x44/1x49/1x3d
+
+2. Replace /1x menjadi \x, sehingga enkripsi hexa menjadi sbb:
+
+\x52\x6d\x78\x68\x5a\x7a\x70\x77\x64\x54\x56\x6b\x4e\x48\x51\x78\x62\x6c\x39\x4d\x4d\x33\x59\x7a\x62\x44\x49\x3d
+
+3. Dekrip hexa di atas dengan perintah ini:
+
+
+echo -e '\x52\x6d\x78\x68\x5a\x7a\x70\x77\x64\x54\x56\x6b\x4e\x48\x51\x78\x62\x6c\x39\x4d\x4d\x33\x59\x7a\x62\x44\x49\x3d'
+
+RmxhZzpwdTVkNHQxbl9MM3YzbDI=
+
+4. Didapatkan hasil dekripnya masih dalam format base64. Dekrip kembali menggunakan perintah:
+
+echo 'RmxhZzpwdTVkNHQxbl9MM3YzbDI=' | base64 -d
+
+Flag:pu5d4t1n_L3v3l2
+
+5. Flag: pu5d4t1n_L3v3l2

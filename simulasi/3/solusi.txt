@@ -1,0 +1,21 @@
+1. Buka index.html dan lihat pada baris bawah ada clue:
+
+Password terdiri dari 4 karakter huruf besar dan kecil
+
+2. Berarti photo.zip perlu dicrack dengan menggunakan perintah frackzip
+
+fcrackzip -l 4 -c Aa -u photo.zip
+PASSWORD FOUND!!!!: pw == BuAG
+
+3. Password adalah XXXX. Unzip photo.zip
+
+unzip photo.zip
+Archive:  photo.zip
+[photo.zip] photo.jpg password: BuAG
+  inflating: photo.jpg    
+
+4. Cek berkas photo.jpg dengan perintah strings
+
+strings photo.jpg
+
+5. Ditemukan Flag:p3rint4h_strings

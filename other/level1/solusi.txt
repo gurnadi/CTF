@@ -1,0 +1,20 @@
+1. Buka source html berkas index.html, didapatkan Clue sbb:
+
+tr a-zA-Z n
+-za-mN-ZA-M
+
+Gabungkan keduanya sehingga menjadi:
+
+tr a-zA-Z n-za-mN-ZA-M
+
+2. Cek berkas AC_Run.js didapatkan clue sbb:
+
+Synt->FgnegPloreWnjnen
+
+3. Jalankan perintah ini di console kali linux:
+
+echo 'Synt->FgnegPloreWnjnen' | tr a-zA-Z n-za-mN-ZA-M
+
+4. Didapatkan:
+
+Flag->StartCyberJawara

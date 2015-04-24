@@ -1,0 +1,14 @@
+1. Jalankan berkas intbof_ex1
+
+./intbof_ex1
+l = (32 bits)
+
+2. Jalankan gdb
+
+gdb ./intbof_ex1
+
+ketik: 
+
+layout asm
+
+Ditemukan flag: 0xc0fee

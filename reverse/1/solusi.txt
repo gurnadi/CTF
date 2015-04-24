@@ -1,0 +1,15 @@
+1. Jalankan berkas rev
+
+./rev
+-----[Bring the Action]-----
+_ZrgnyZhyvfun_
+
+
+2. Jalankan ulang berkas rev dengan menyertakan parameter _ZrgnyZhyvfun_
+
+./rev _ZrgnyZhyvfun_
+-----[Bring the Action]-----
+_MetalMulisha_
+
+
+3. Ditemukan flag _MetalMulisha_

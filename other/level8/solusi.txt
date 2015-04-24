@@ -1,0 +1,25 @@
+1. Unzip berkas Level8.zip
+
+2. Masuk ke Direktori Level8//Hacked by Semar_Files ada berkas punokawan.jpg di sana.
+
+3. Cek berkas punokawan.jpg dengan perintah strings
+
+strings punokawan.jpg | grep 7z
+
+Sepertinya berkas punokawan.jpg merupakan berkas terkompresi dengan format 7z.
+
+4. Ubah ekstensi berkas punokawan.jpg menjadi 7z
+
+mv punokawan.jpg punokawan.jpg.7z
+
+5. Ekstrak berkas punokawan.jpg.7z dengan menggunakan Archive Manager di Kali Linux
+
+6. Jika muncul pertanyaan password masukkan "semar", karena gambar punokawan.jpg berisikan tokoh semar
+
+7. Akan muncul sebuah direktori bernama fl4g dengan beberapa potongan berkas. Potongan berkas ini jika dianalisa merupakan sebuah gambar jpg. Gambar ini perlu disusun ulang untuk menjadi utuh.
+
+Setelah mencoba berbagai kombinasi, didapatkan kombinasi untuk menampilkan gambar secara utuh adalah sbb:
+
+cat gfalgdal ghalghda lahglda nahghak ghdhaglar ghadghaa jgamvgja gaphgaga ljljfdaea nvlahdafe utapjdga gjteaoyo ogphghgpw > flag.jpg
+
+8. Buka berkas flag.jpg didapatkan flag adalah: Ini Bukan Flag

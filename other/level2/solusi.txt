@@ -1,0 +1,53 @@
+1. Buka berkas level2.html dengan browser, didapatkan bahasa C.
+
+void main()
+{
+char c;
+printf("\nTiap Huruf dari Jawaban\n");
+scanf("%c",&c);
+printf("Clue : %c is %d",c,c);
+} 
+
+Selain itu ada sebuah gambar robot unik. Robot unik ini adalah gambar sebuah situs terkenal di internet bernama "reddit"
+
+2. Simpan bahasa C tersebut dalam sebuah file bernama level2.c dan compile berkas tersebut menggunakan gcc
+
+gcc level2.c -o level2
+
+3. Jalankan file level2
+
+./level2
+Tiap Huruf dari Jawaban
+r
+Clue : r is 114
+
+./level2
+Tiap Huruf dari Jawaban
+e
+Clue : e is 101
+
+./level2
+Tiap Huruf dari Jawaban
+d    
+Clue : d is 100
+
+./level2
+Tiap Huruf dari Jawaban
+d
+Clue : d is 100
+
+./level2
+Tiap Huruf dari Jawaban
+i
+Clue : i is 105
+
+./level2
+Tiap Huruf dari Jawaban
+t
+Clue : t is 116
+
+Jika digabung maka angkanya menjadi: 114101100100105116
+
+4. Masukkan angka tersebut dalam form pada berkas level2.html 
+
+5. Didapatkan flag: P0w3r_R4nG3r

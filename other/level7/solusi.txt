@@ -1,0 +1,48 @@
+1. Ekstrak cry007.tar.gz
+
+tar -xvf cry007.tar.gz
+
+2. Baca berkas PETUNJUK.
+
+cat PETUNJUK
+
+didapatkan clue "M4DL33ts"
+
+3. Jalankan berkas alat.py
+
+python alat.py
+
+Muncul pesan sbb:
+
+./alat.py enkrip <password> <pesan> <hasil>
+./alat.py dekrip <password> <pesan> <hasil>
+
+4. Coba jalankan ulang dengan lengkap sbb:
+
+./alat.py dekrip M4DL33ts msg001.pesan msg001.txt
+
+5. Baca msg001.txt
+
+cat msg001.txt
+
+Didapatkan clue: S03k4mt1
+
+
+6. Dekrip msg002.pesan
+
+./alat.py dekrip S03k4mt1
+ msg002.pesan msg002.txt
+
+cat msg002.txt
+
+
+Didapatkan clue: 
+data:image/jpeg;base64, petunjuk2
+
+Clue menunjukkan bahwa berkas PETUNJUK2 adalah sebuah gambar jpg dalam format base64
+
+7. Dekrip berkas PETUNJUK2 menjadi sebuah berkas jpg
+
+cat PETUNJUK2 | base64 -d > PETUNJUK2.JPG
+
+8. Buka gambar PETUNJUK2.JPG didapatkan Flag adalah: 0x5330336b346d741

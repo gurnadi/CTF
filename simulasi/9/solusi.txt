@@ -1,0 +1,22 @@
+1. Ekstrak berkas doc_forensics.docx menggunakan sevenzip
+
+2. Ada sebuah folder bernama Securinets - Copie (2).
+
+3. Masuklah ke dalam direktori "Securinets - Copie (2)/word" Ada direktori document.xml.
+
+4. Terlihat bahwa ini adalah sebuah file microsoft word yang rusak. Maka kita perlu membangun ulang berkas docx ini.
+
+5. Buatlah sebuah dokumen kosong msword dengan menggunakan microsoft word simpan dengan nama "rebuild.docx"
+
+6. Unzip rebuild.docx
+
+7. Masuklah ke direktori word dan lihat ada document.xml di sana. Ganti document.xml pada berkas rebuild.docx dengan document.xml pada berkas Securinets - Copie
+
+8. Zip semua berkas milik rebuild dengan menggunakan sevenzip 
+
+9. Ganti ekstension rebuild.zip menjadi rebuild.docx.
+
+10. Buka dengan menggunakan Libre Office (Jangan Microsoft Office)
+
+11. Flag= D3_R13N_ChA113Ng3R_
+

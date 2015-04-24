@@ -1,0 +1,52 @@
+1. Buka berkas Level3.docx dengan office editor. Didapatkan clue level 3 adalah:
+
+CYBERDEFENCECOMPETITION
+
+2. Unzip berkas Level3.docx
+
+unzip Level3.docx
+
+2. Cek gambar yang ada di direktori word/media, ada 3 gambar berformat jpg di sana.
+
+3. Cek dengan perintah strings masing-masing gambar tersebut
+
+strings image1.jpeg | grep Rar
+strings image2.jpeg | grep Rar
+
+4. Unrar image1.jpeg dan image2.jpeg
+
+unrar e image1.jpeg
+Extracting from image1.jpeg
+Tahun 2014 adalah pemilu yang ke : [11]
+
+Didapatkan sebuah file bernama script.txt. Rename script.txt menjadi script1.txt
+
+mv script.txt script1.txt
+
+unrar e image2.jpeg
+Extracting from image2.jpeg
+Provinsi di Indonesia : [34]
+
+Didapatkan sebuah file bernama script.txt. Rename script.txt menjadi script2.txt, jika dilihat script tersebut merupakan sebuah script perl.
+
+Gabungkan script1.txt dan script2.txt dengan perintah:
+
+cat script2.txt script1.txt > script.pl
+
+5. Rename image3.jpeg menjadi image3.jpg dan extract key menggunakan perintah outguess
+
+mv image3.jpeg image3.jpg
+outguess -k CYBERDEFENCECOMPETITION -r image3.jpg key.txt
+cat key.txt
+Key Level 3: KEMENTERIANPERTAHANAN
+
+6. Jalankan script perl dengan perintah
+
+perl script.pl -d
+decrypt
+Clue Level 3: CYBERDEFENCECOMPETITION
+Key Level 3: KEMENTERIANPERTAHANAN
+Flag Level 3:
+SUPDJOWNPPYXTPXTVTVPO
+
+7. Didapatkan flag adalah: SUPDJOWNPPYXTPXTVTVPO

@@ -1,0 +1,28 @@
+1. Buka berkas level4.php dan ditemukan kode enkripsi decimal sbb:
+
+89
+88
+66
+121
+97
+87
+120
+116
+98
+51
+65
+61
+
+2. Terjemahkan kode enkripsi tersebut dengan bantuan asciitohex.com didapatkan:
+
+YXByaWxtb3A=
+
+3. Terjemahkan kode enkripsi base64 itu dengan asciitohex.com didapatkan:
+
+aprilmop
+
+4. Input "aprilmop" pada form yang ada di level4.php, ketika diklik tombol submit ternyata masih error dan ada "clue POST ulang key anda!"
+
+5. Ubah form di level4.php agar method-nya menjadi POST dengan cara klik kanan pada browser dan pilih inspect element dan ganti attribute form menjadi POST, kemudian klik ulang tombol submit
+
+6. Didapatkan flag adalah: Bedakan_Method_POST_dan_GET

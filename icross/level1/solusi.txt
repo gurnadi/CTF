@@ -1,0 +1,25 @@
+1. Bongkar kode html berkas index.php, didapatkan 3 berkas yaitu amber.css, marginLeft.js dan marginRight.js
+
+2. Bongkar marginLeft.js didapatkan clue sbb:
+
+var string = 'md5sum File = Flag';
+
+3. Bongkar marginRight.js didapatkan clue sbb:
+
+var string = 'background-Text save to File'
+
+4. Dari dua soal tersebut maka dapat diterjemahkan Variabel background-Text harus disimpan dalam sebuah file dan kemudian file tersebut di md5sum. Hasil md5sum file tersebut adalah Flag.
+
+5. Variabel "background-Text" merupakan variabel yang berhubungan dengan CSS, sehingga perlu diperiksa pada berkas amber.css dan didapatkan sbb:
+
+background-Text = Aosi-2014
+
+6. Simpan "Aosi-2014" dalam sebuah file bernama level1.txt
+
+7. md5sum berkas level1.txt
+
+md5sum level1.txt
+2ce7056d3d80694a7892b0ada06c9fd3 level1.txt
+
+8. Didapatkan flag adalah: 2ce7056d3d80694a7892b0ada06c9fd3
+

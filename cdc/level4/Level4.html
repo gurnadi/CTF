@@ -1,0 +1,59 @@
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>CTF CDC | Level 4</title>
+
+<style type="text/css">
+
+<!-- Clue: LulzSec -->
+
+</style>
+
+</head>
+
+
+<style>
+body {
+	text-align: center;
+	font-family: 'courier new';
+	background: #000;
+	color: #444444;
+}
+
+#center {
+	padding: 10px;
+	border: 1px solid #777777;
+	width: 800px;
+	margin: 10px auto;
+	font-size: 12px;
+}
+
+input {
+	border: 1px solid #777777;
+	background: none;
+	color: #444444;
+}
+</style>
+<div id="center">
+<font color="green">void main()</font> <br> 
+<font color="green">{</font> <br> 
+<font color="green">char c;</font> <br> 
+<font color="green">printf("\nTiap Huruf dari Jawaban\n");</font> <br> 
+<font color="green">scanf("%c",&c);</font> <br> 
+<font color="green">printf("Clue : %c is %d",c,c);</font> <br> 
+<font color="green">}</font> <br> 
+<br><br>
+<script src="jquery-1.10.1.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#loaddata").click(function(){ 
+txtname=$("#true").val();
+txtlocation=$("#txtlocation").val();
+$.post("post_test.php",{ name:txtname, location: txtlocation },function(ajaxresult){
+$("#postrequest").html(ajaxresult);
+});
+});
+});
+</script>

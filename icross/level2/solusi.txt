@@ -1,0 +1,29 @@
+1. Buka berkas level2.pcap dengan menggunakan wireshark
+
+2. Filtering wireshark dengan protokol http
+
+3. Didapatkan Clue URL sbb:
+
+/1337.txt
+/file.png
+/clue.txt
+/Semangat%20Ya%20Gan.php
+
+4. Akses URL tersebut dibrowser dengan alamat yang sama seperti soal:
+
+http://IP.ADDRESS.SOAL/clue.txt
+Berisi: Berhubungan dengan ular
+
+http://IP.ADDRESS.SOAL/file.png
+Berisi: Sebuah gambar, download gambar ini.
+
+http://IP.ADDRESS.SOAL/1337.txt
+Didapatkan sebuah script, sepertinya script python
+
+5. Simpan 1337.txt sebagai sebuah file python misalkan 1337.py
+
+6. Jalankan berkas 1337.py dengan perintah:
+
+python 1337.py -d file.png
+
+7. Didapatkan flag adalah: CemunguDh_Eaa

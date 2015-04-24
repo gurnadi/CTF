@@ -1,0 +1,7 @@
+1. Buka berkas soal.docx dengan microsoft word. Didapatkan enkripsi:
+
+17 0B 08 2C 1A 0C 1D 2C 07 04 11 2C 13 0C 12 17 15 08 0E
+
+2. Dengan bantuan http://www.mindrunway.ru/IgorPlHex/USBKeyScan.pdf didapatkan sbb:
+
+THE WIZ DAN PIOTREK

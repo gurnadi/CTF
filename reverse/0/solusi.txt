@@ -1,0 +1,10 @@
+1. Jalankan berkas string di console kali linux
+
+./string
+Temukan flagnya!
+
+2. Jalankan perintah strings untuk mengecek apakah ada flag
+
+strings ./string
+
+Ditemukan Flag:Minum_Kopi_Dulu_gan

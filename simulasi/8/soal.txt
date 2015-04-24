@@ -1,0 +1,9 @@
+Salah seorang pengguna warung internet mengupload sebuah dokumen ke situs pribadinya . Di dalam dokumen tersebut terdapat kata kunci untuk membuka sebuah brankas.
+
+Temukan flagnya dalam level ini.
+
+Clue:
+Flag1 = password
+Flag = md5(Flag1+Flag2)
+
+Hint: which one you prefer? "echo -n" or "echo"?

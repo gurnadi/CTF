@@ -1,0 +1,17 @@
+1. Buka soal.docx
+
+2. Ditampilkan enkripsi sebagai berikut:
+
+Xx_yax_xxzya_yaxz_yax_zyyaxz_zxaxz_xx_axxzya
+
+3. terlihat ada huruf X Y A dan Z. Huruf X Y A dan Z adalah penunjuk cursor keyboard.
+
+X = Cursor ke bawah
+Y = Cursor ke atas
+A = Kursor ke kanan
+Z = Kursor ke kiri
+_ = Spasi
+
+4. Untuk membantu penterjemahan kode-kode diatas bisa dilakukan dengan bantuan microsoft word
+
+5. Didapatkan kata I N D O N E S I A

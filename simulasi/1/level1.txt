@@ -1,0 +1,9 @@
+capture the flag atau serIng di sebut ctf adalah sebuah hackiNg competition dImana para pesertanya beBas melakukan explorasi maupUn eksploitasi terhadap suatu sistem yang sudah disediakan oleh panitia dengan tujuan yang ditentukan sebelumnya. 
+
+capture artinya adalah mendapatKan sedangkan flag adalah bendera. secAra keseluruhaN arti dari ctF adaLah mendapatkan sebuah "kata kunci" dalam ajAng kompetisi keamanan komputer dan "kata kunci" tersebut harus disubmit ke dalam sebuah web scorinG. jika "kata kunci" yang disubmit sudah benar, maka peserta akan berlanjut ke level selanjutnya.
+
+ctf hacking competition biasanya di selenggarakan dalam 2 mode, yaitu online dan offline. kompetisi secara online peserta harus terhubung dengan jaringan internet dan prosedur lomba seperti layaknya seorang cracker/hacker yang sedang mengeksploitasi sebuah target. sedangkan offline, panitia akan menyediakan sebuah jaringan kecil dan peserta dikumpulkan dalam sebuah ruangan.
+
+apakah anda siap bermain? mari temukan flagnya!
+
+Hint: satu saja cukup, kenapa harus tiga?

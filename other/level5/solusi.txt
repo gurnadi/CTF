@@ -1,0 +1,27 @@
+1. Unzip berkas Level-5.docx 
+
+unzip Level-5.docx
+
+2. Ada dua berkas iamge1.jpeg dan image2.jpeg pada direktori word/media
+
+cd word/media
+Unrar e image1.jpeg
+Extracting from image1.jpeg
+Password : Text on Picture
+Enter password (will not be echoed) for flag5-1.txt: rdfgcvb
+Extracting  flag5-1.txt                                               OK 
+All OK
+
+unrar e image2.jpeg
+Extracting from image2.jpeg
+Password : Text on Picture
+Enter password (will not be echoed) for flag5-2.txt: weasdzxc
+Extracting  flag5-2.txt                                               OK 
+
+Gabungkan flag5-1.txt dan flag5-2.txt didapatkan sebagai berikut:
+
+cat flag5*
+
+Flag	:	M!nUm_4ir_PuT!H
+
+

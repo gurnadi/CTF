@@ -1,0 +1,19 @@
+1. Jalan berkas findit
+
+./findit
+Temukan Flag!!
+
+2. Jalankan ulang berkas findit dengan parameter asal, misalkan AAA
+
+./findit AAA
+
+Tidak ditemukan perintah apapun, jadi sepertinya perintah ini membutuhkan sebuah parameter yang harus disertakan dalam menjalankan perintah.
+
+3. Gunakan perintah ltrace untuk mengecek komparasi parameter yang disertakan dengan parameter yang ada dalam aplikasi findit
+
+ltrace ./findit AAA
+__libc_start_main(0x80484d0, 2, 0xbf88d944, 0x8048510, 0x8048580 <unfinished ...>
+fprintf(0xb775a440, "kopihitamkupukupu")                                                    = -1
++++ exited (status 0) +++
+
+4. Ditemukan flag: kopihitamkupukupu

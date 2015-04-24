@@ -1,0 +1,22 @@
+1. Buka file Level1.html
+2. Ditemukan clue sbb:
+
+#Tahun lalu #Hasil dari 333+333= #Nomor Pesawat MAS yang Hilang
+
+dan
+
+Enkripsi base64.
+
+3. Terjemahkan kode base64 tersebut dengan bantuan http://asciitohex.com didapatkan sebuah python script.
+
+4. Simpan python script tersebut dengan nama misalkan script.py. Terlihat script python ini membutuhkan 3 variabel untuk di input (base, pow, mod)
+
+5. Tiga Variabel tersebut adalah 2014, 666 dan 370.
+
+6. Jalankan script python tersebut di console linux sebagai berikut:
+
+python script.py 2014 666 370
+
+7. Didapatkan flag adalah:
+
+178

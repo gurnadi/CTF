@@ -1,0 +1,21 @@
+1. Dengarkan soal.mp3 dengan menggunakan Headset, jika didengarkan secara teliti terdengar pengejaan sbb:
+
+G A R U D A xxxxx PASSWORD A D A L A H S U D H A R N O T O
+
+2. xxxxx menunjukkan pengejaan yang tidak bisa terbaca, sedangkan password adalah sudharnoto
+
+3. Cek berkas soal.mp3 dengan perintah strings
+
+strings soal.mp3 | grep Rar
+
+ternyata sebuah berkas rar.
+
+4. Unrar berkas soal.mp3 dengan perintah sbb:
+
+unrar e soal.mp3
+
+Masukkan password: sudharnoto
+
+5. Didapatkan berkas selamat.txt dan key = kusbini
+
+6. Flag: kusbini

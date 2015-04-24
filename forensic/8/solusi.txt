@@ -1,0 +1,28 @@
+1. Buka soal.pcap menggunakan wireshark
+
+2. Analisa berkas tersebut di wireshark, didapatkan link yang dicurigai flag adalah:
+
+/download/7als04jj9lu1w38/flag.zip
+
+3. Klik kanan dan follow tcp stream baris tersebut didapatkan link lengkapnya adalah
+
+http://www.mediafire.com/download/7als04jj9lu1w38/flag.zip
+
+4. Akses alamat tersebut dan download berkas flag.zip
+
+5. Unzip flag.zip
+
+unzip flag.zip
+
+6. Isi flag.txt ternyata sebuah berkas dalam enkripsi base64. Rapikan terlebih dahulu isi berkas agar berada dalam satu baris dan kemudian Decode berkas tersebut
+
+cat flag.txt | base64 -d > a
+
+7. Cek jenis file dengan perintah file
+
+file a
+a: JPEG image data, JFIF standard 1.02
+
+8. Rename berkas tersebut menjadi a.jpg
+
+9. Isinya ternyata gambar sebuah pahlawan. Jika tidak mengerti itu gambar siapa, upload gambar tersebut di Google didapatkan nama pahlawan adalah "supriyadi"

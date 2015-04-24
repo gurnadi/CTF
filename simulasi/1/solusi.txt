@@ -1,0 +1,9 @@
+1. Baca baik-baik soalnya, gabungkan huruf besar yang ada. Didapatkan kalimat
+
+INIBUKANFLAG
+
+2. Key yang ditemukan di atas bukanlah flag, karena hint menyebutkan satu saja cukup, kenapa harus tiga? Itu artinya yang dibutuhkan adalah hanya satu kata, sedangkan INIBUKANFLAG terdiri dari tiga kata.
+
+3. Setelah dibaca, ada sebuah kalimat yang bertuliskan "flag adalah bendera"
+
+Flag: bendera

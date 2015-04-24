@@ -1,0 +1,13 @@
+Omar adalah sebuah bandar narkoba yang memiliki jaringan sangat luas.
+
+Untuk melancarkan proses distribusi narkoba yang dia miliki, dia menggunakan sebuah aplikasi khusus di androidnya. Aplikasi ini hanya akan berjalan di android yang ia miliki dan rupanya aplikasi ini terhubung langsung ke sebuah web.
+
+Satu-satunya informasi yang kepolisian miliki hanyalah username "omarthelegend", sedangkan alamat web dan key-nya masih belum didapatkan.
+
+Tugas anda adalah membantu pihak kepolisian untuk memperolehnya. Jika berhasil ada Flag yang menanti anda.
+
+Selamat bekerja!
+
+Clue:
+username: omarthelegend
+&quot; = " (tanda kutip 2)

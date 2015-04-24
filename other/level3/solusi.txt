@@ -1,0 +1,14 @@
+1. Unzip dan decompile berkas list-ctf.apk 
+
+unzip list-ctf.apk
+java -jar /usr/share/smali/baksmali-1.4.1.jar list-ctf.apk -o out
+
+2. Analisa semua berkas tersebut dengan kata kunci CTF
+
+grep -i -r CTF *
+
+3. Didapatkan berkas mencurigakan out/com/slocvetkovski/wifi/hacker/passwords/list/MainActivity.smali
+
+4. Setelah dicek secara detil pada berkas tersebut ada sebuah flag yaitu:
+
+flag lup1tdansl3nth3ng1kutCTF

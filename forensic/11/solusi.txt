@@ -1,0 +1,7 @@
+1. Buka berkas 1.jpg menggunakan exiftool
+
+exiftool 1.jpg
+
+2. Didapatkan comment "HammerSonic_Jakarta_Metal_Festival_2014"
+
+3. Flag: HammerSonic_Jakarta_Metal_Festival_2014

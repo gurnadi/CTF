@@ -1,0 +1,33 @@
+1. Lihat source html berkas Level4.html, didapatkan clue sbb:
+
+- Clue: LulzSec
+- Ada sebuah berkas bernama post_test.php
+- Ada sebuah kode bahasa C.
+
+2. Copy dan simpan kode bahasa C itu dengan nama level4.c
+
+3. Compile level4.c menjadi sebuah file binary dengan perintah:
+
+gcc level4.c -o level4
+
+4. Jalankan berkas level4
+
+./level4 
+
+5. Lakukan nomor 4 berulang-ulang dengan memasukkan huruf-huruf LulzSec masing-masing sehingga akan didapatkan beberapa angka sbb:
+
+L = 76, u = 117, l = 108, z = 122, S = 83, e = 101, c = 99
+
+Jika digabungkan maka akan menjadi: 761171081228310199
+
+6. Buka berkas post_test.php dengan browser http://IP.ADDRESS.SOAL/level4/post_test.php
+
+7. Muncul error bahwa ada kesalahan variabel dengan nama "name"
+
+8. Akses post_test.php dengan browser sbb:
+
+http://IP.ADDRESS.SOAL/level4/post_test.php?name=761171081228310199
+
+9. Didapatkan Flag adalah:
+
+K$4tr!4_B4j4_H1t4m
