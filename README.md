@@ -1,6 +1,6 @@
 # CTF
-Kompilasi beberapa soal CTF beserta jawabannya di beberapa kompetisi CTF yang diselenggarakan di Indonesia. 
+This are a compilation of CTF scenario in many competition in Indonesia.
 
-Beberapa soal belum ada jawabannya secara detil, sangat ditunggu partisipasinya untuk melengkapi cara-caranya.
+Some of them is not answering yet.
 
-Sebagian soal dibuat oleh personil-personil lain, sebagian ada juga yang dibuat oleh saya sendiri.
+Some of them made by other people, but some of them made by me.
