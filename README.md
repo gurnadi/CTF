@@ -1,5 +1,5 @@
 # CTF
-This are a compilation of CTF scenario in many competition in Indonesia.
+These are compilation of CTF scenario in many competition in Indonesia.
 
 Some of them is not answering yet.
 
